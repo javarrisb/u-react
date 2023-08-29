@@ -13,9 +13,17 @@
 
     <script>
       function App() {
-        return React.createElememnt("header");
+        // const time = new Date().toLocaleTimeString();
+
+        return React.createElememnt(
+          "header",
+          null,
+          `Hello React! It's ${time}`
+        );
       }
+
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(React.createElememnt(App));
     </script>
   </body>
 </html>
-<
