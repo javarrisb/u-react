@@ -152,10 +152,12 @@ const { title, author, pages, publicationDate, genres, hasMovieAdaptation } =
 author;
 title;
 
+// Rest operator
 const [primaryGenre, secondaryGenre, ...otherGenres] = genres;
 
 console.log(primaryGenre, secondaryGenre, otherGenres);
 
+// Spread operator 
 const newGenres = [...genres, 'epic fantasy']
 newGenres
 
@@ -163,3 +165,8 @@ const updatedBook = { ...book, moviePublicationDate: '2001-12-19'}
 updatedBook
 const summary = `${title}, ${pages} a book was written by ${author} `;
 summary
+// Ternary operators. Has 3 parts: a condition, if its true and if it false 
+// An operator always return some value 
+const pagesRange = pages > 1000 ? 'over a thousand' : 'less than 1000';
+pagesRange
+console.log(`The book has ${pagesRange} pages`)
