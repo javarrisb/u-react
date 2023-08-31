@@ -144,13 +144,22 @@ function getBook(id) {
 }
 // Destructuring
 
-const book = getBook(2);
+const book = getBook(1);
 book;
 
-
-const {title, author, pages, publicationDate, genres, hasMovieAdaptation } = book;
+const { title, author, pages, publicationDate, genres, hasMovieAdaptation } =
+  book;
 author;
 title;
 
-const primaryGenre = genres[0];
+const [primaryGenre, secondaryGenre, ...otherGenres] = genres;
 
+console.log(primaryGenre, secondaryGenre, otherGenres);
+
+const newGenres = [...genres, 'epic fantasy']
+newGenres
+
+const updatedBook = { ...book, moviePublicationDate: '2001-12-19'} 
+updatedBook
+const summary = `${title}, ${pages} a book was written by ${author} `;
+summary
