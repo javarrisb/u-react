@@ -188,4 +188,13 @@ spanishTranslation
 
 
 const count = book.reviews.librarything.reviewsCount ?? "no data";
-count
+count;
+
+function getTotalReviewCount(book) {
+const goodreads = book.reviews.goodreads.reviewsCount;
+const librarything = book.reviews.librarything?.reviewsCount ?? 0;
+return goodreads + librarything;
+
+}
+
+console.log(getTotalReviewCount(book));
