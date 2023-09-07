@@ -227,3 +227,11 @@ adventureBooks;
 const pagesAllBooks = books.reduce((acc, book)=> acc + book.pages, 0);
 pagesAllBooks
 
+// Array sort method
+const arr = [3,7,1,9,6];
+const sorted = arr.slice().sort((a, b) => b -a )
+sorted 
+arr 
+
+const sortedByPages = books.slice().sort((a,b) => b.pages - a.pages)
+sortedByPages``
