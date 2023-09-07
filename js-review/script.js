@@ -222,3 +222,8 @@ longBooks;
 
 const adventureBooks = books.filter(books=> books.genres.includes('adventure'));
 adventureBooks;
+
+// Array reduce method
+const pagesAllBooks = books.reduce((acc, book)=> acc + book.pages, 0);
+pagesAllBooks
+
