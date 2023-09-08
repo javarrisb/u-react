@@ -255,3 +255,7 @@ const booksAfterUpdate = booksAfterDelete.map(book => book.id ==1 ? {...book, pa
 booksAfterUpdate
 
 
+// Promises 
+fetch("https://jsonplaceholder.typicode.com/todos").then(res=> res.json()).then(data=> console.log(data))
+
+
